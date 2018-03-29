@@ -13,7 +13,7 @@
 	</head>
 	<body>
 
-		<video src="content\a thing.mp4" autoplay="true" loop="true"></video>
+		<video id="myVideo" src="content\a thing.mp4" autoplay="true" loop="true"></video>
 
 		<div class="main">
 
@@ -33,6 +33,29 @@
 				<a href="https://github.com/WebDevDeja" target="_blank"><img src="content\gh.png" alt="github logo"></a>
 				<a href="https://codepen.io/NightOwlDev/" target="_blank"><img src="content\cp.png" alt="codepen.io logo"></a>
 				<a href="https://www.youtube.com/channel/UCTofcCRhIrGxiEJLiQyxqXw" target="_blank"><img src="content\yt.png" alt="youtube logo"></a>
+			</div>
+
+			<div class="btn">
+
+				<button id="myBtn" onclick="myFunction()">Pause</button>
+
+				<script type="text/javascript">
+
+				var video = document.getElementById("myVideo");
+				var btn = document.getElementById("myBtn");
+
+				function myFunction() {
+					if (video.paused) {
+						video.play();
+						btn.innerHTML = "Pause";
+					} else {
+						video.pause();
+						btn.innerHTML = "Play";
+					}
+				}
+
+				</script>
+
 			</div>
 
 		</div>
