@@ -1,0 +1,56 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.who{
+	text-align: center;
+	font-family: 'VT323', monospace;
+	color: #e0ce00;
+	margin: 5px;
+}
+
+p{
+	font-family: 'Arvo', serif;
+	color: #6976b5;
+	margin: 5px;
+}
+video{
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: auto;
+	max-width: 75%
+}
+.about{
+	margin-top: 25%;
+	padding: 20px;
+	height: 80%;
+	background: rgba(26,35,77,0.8);
+}
+.social{
+	margin-top: 15%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.social img{
+	height: 50px;
+	width: 50px;
+}
+.about h1,h2,h3{
+	text-align: center;
+}
