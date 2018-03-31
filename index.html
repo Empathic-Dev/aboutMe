@@ -13,48 +13,68 @@
 	</head>
 	<body>
 
-		<video id="myVideo" src="content\a thing.mp4" autoplay="true" loop="true"></video>
+		<div class="section1">
 
-		<div class="main">
+			<video id="myVideo" src="content\a thing.mp4" autoplay="true" loop="true"></video>
 
 			<div class="about">
+
 				<div class="who">
 					<h1>Web Dev Deja</h1>
 					<p>aka Princess Shuri</p>
+				</div>
+
+				<div class="bio">
+
+					<p>I'm teaching myself Web Dev and Design. Since January, I've been taking The Complete Web Developers Course 2.0. I finished HTML and CSS section and I'm finishing up the JavaScript section. Next, I will learn JQuery, Bootstrap 4, Wordpress, PHP, MySQL, APIs, Mobile Apps, then Python. My goal as a Web Developer/Designer is to build websites for Artist, Writers, Non-Profits, Small Businesses and more!</p>
+
+					<p>I'm an Artist with a love for the Internet. Web Development and Design bridge the gap between the two similar fields. Since I started high school, I struggled to find a career path I will enjoy. I didn't want to be like my family who has jobs they hate. Why would I do that to myself? I want an exciting career which allows me to flex my creativity and my brain. Web Development and Design does that for me. This field is evolving fast and I have to keep learning new things every single day. I can bring peoples visions to life with a few lines of code. </p>
+
+					<p>That's why I keep learning.</p>
 
 				</div>
 
-				<p></p>
+				<div class="social">
+					<a href="https://twitter.com/WebDevDeja" target="_blank"><img src="content\tw.png" alt="twitter logo"></a>
+					<a href="https://github.com/WebDevDeja" target="_blank"><img src="content\gh.png" alt="github logo"></a>
+					<a href="https://codepen.io/NightOwlDev/" target="_blank"><img src="content\cp.png" alt="codepen.io logo"></a>
+					<a href="https://www.youtube.com/channel/UCTofcCRhIrGxiEJLiQyxqXw" target="_blank"><img src="content\yt.png" alt="youtube logo"></a>
+				</div>
 
-			</div>
+				<div class="btn">
 
-			<div class="social">
-				<a href="https://twitter.com/WebDevDeja" target="_blank"><img src="content\tw.png" alt="twitter logo"></a>
-				<a href="https://github.com/WebDevDeja" target="_blank"><img src="content\gh.png" alt="github logo"></a>
-				<a href="https://codepen.io/NightOwlDev/" target="_blank"><img src="content\cp.png" alt="codepen.io logo"></a>
-				<a href="https://www.youtube.com/channel/UCTofcCRhIrGxiEJLiQyxqXw" target="_blank"><img src="content\yt.png" alt="youtube logo"></a>
-			</div>
+					<button id="myBtn" onclick="myFunction()">Pause</button>
 
-			<div class="btn">
+					<script type="text/javascript">
 
-				<button id="myBtn" onclick="myFunction()">Pause</button>
+					var video = document.getElementById("myVideo");
+					var btn = document.getElementById("myBtn");
 
-				<script type="text/javascript">
-
-				var video = document.getElementById("myVideo");
-				var btn = document.getElementById("myBtn");
-
-				function myFunction() {
-					if (video.paused) {
-						video.play();
-						btn.innerHTML = "Pause";
-					} else {
-						video.pause();
-						btn.innerHTML = "Play";
+					function myFunction() {
+						if (video.paused) {
+							video.play();
+							btn.innerHTML = "Pause";
+						} else {
+							video.pause();
+							btn.innerHTML = "Play";
+						}
 					}
-				}
 
-				</script>
+					</script>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="section2">
+
+			<div class="projects">
+
+				<h1>Here are some projects I've completed</h1>
+
+				<p>Aenean id aliquam neque. Nam non efficitur velit. Ut sagittis, urna et tempor ultrices, urna nisl interdum tellus, eget euismod urna justo non dolor. Integer et magna pharetra, dapibus sem ut, efficitur nunc. In metus risus, varius fermentum mauris eu, pellentesque pharetra justo. Duis feugiat nibh quis sapien pretium varius. Sed accumsan mauris mollis, tristique felis nec, hendrerit eros. Aliquam eleifend sem ac augue rhoncus, non luctus justo porta. Vivamus tincidunt augue quis orci molestie pulvinar. Duis laoreet, nisl a consectetur pharetra, sapien felis ultrices tortor, at tempor magna urna quis diam. Suspendisse quis aliquet ex. Proin sodales odio volutpat eros commodo sagittis. Praesent dapibus est eu nisl vestibulum facilisis. Phasellus in turpis congue dolor scelerisque tempor. Vestibulum in odio magna. Duis nec lectus eu felis consequat porta vitae id augue.</p>
 
 			</div>
 
